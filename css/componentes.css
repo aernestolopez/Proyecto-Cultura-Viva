@@ -50,6 +50,7 @@
   align-items: start;
   gap: 2rem;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .footer-column {
