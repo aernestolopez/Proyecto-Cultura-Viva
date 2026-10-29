@@ -13,15 +13,15 @@
     />
   </head>
   <body>
+    <!--Header que contiene el titulo de la página web y la barra de navegacion-->
     <header class="header">
       <div class="header-container">
-        <!-- <div class="logo-container">
-          <img src="img/logo.png" alt="Logo Cultura Viva" class="logo-img" />
-          
-        </div>-->
         <div class="title-container">
-          <h1 class="logo">Cultura Viva</h1>
+          <img src="./img/icono.png" alt="" class="icon" />
+          <h1 class="title-web">Cultura Viva</h1>
         </div>
+
+        <!--NavBar enlazado a los dos html de la página-->
         <nav class="main-nav">
           <ul>
             <li><a href="index.html" class="active">Inicio</a></li>
@@ -31,140 +31,145 @@
       </div>
     </header>
 
+    <!--Texto de información sobre Cultura Viva-->
     <main class="main-content">
       <section class="hero-info">
         <h2>Información</h2>
       </section>
 
+      <!--Tarjetas con información de los próximos eventos: banner, nombre del evento, breve descripción, y categoría de evento-->
       <section class="events-section">
-        <h2 class="section-title">Próximos Eventos</h2>
+        <h2 class="section-next-events">Próximos Eventos</h2>
 
         <div class="card-grid">
           <a href="#" class="event-link">
             <div class="card">
               <div class="div-card-image">
                 <img
-                  src="./img/Petunias-riviera-2027-cartel.webp"
-                  alt=""
+                  src="./img/petunias.webp"
+                  alt="Imagen sobre el concierto de Las Petunias"
                   class="card-img"
                 />
               </div>
               <div class="card-content">
-                <h3 class="card-title">Titulo</h3>
+                <h3 class="card-title">Las Petunias</h3>
+                <p class="card-description">Concierto</p>
+                <span class="card-badge">Música</span>
+              </div>
+            </div>
+          </a>
+          <a href="evento.html" class="event-link">
+            <div class="card">
+              <div class="div-card-image">
+                <img
+                  src="./img/museo_bellas_artes.jpg"
+                  alt="Foto del evento del Museo de Bellas Artes"
+                  class="card-img"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Museo Bellas Artes</h3>
                 <p class="card-description">Texto descriptivo</p>
                 <span class="card-badge">Nuevo</span>
               </div>
             </div>
           </a>
-          <a href="#" class="event-link">
+          <a href="evento.html" class="event-link">
             <div class="card">
               <div class="div-card-image">
                 <img
-                  src="./img/Petunias-riviera-2027-cartel.webp"
-                  alt=""
+                  src="./img/kinpaku.jpg"
+                  alt="Imagen sobre la exposición Kinpaku"
                   class="card-img"
                 />
               </div>
               <div class="card-content">
-                <h3 class="card-title">Titulo</h3>
+                <h3 class="card-title">Kinpaku. Exposición de arte japonés</h3>
+                <p class="card-description">Texto descriptivo</p>
+                <span class="card-badge">Arte</span>
+              </div>
+            </div>
+          </a>
+          <a href="evento.html" class="event-link">
+            <div class="card">
+              <div class="div-card-image">
+                <img
+                  src="./img/tere.jpg"
+                  alt="Imagen promocional del próximo concierto de Tere!"
+                  class="card-img"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Tere!</h3>
+                <p class="card-description">Texto descriptivo</p>
+                <span class="card-badge">Música</span>
+              </div>
+            </div>
+          </a>
+          <a href="evento.html" class="event-link">
+            <div class="card">
+              <div class="div-card-image">
+                <img
+                  src="./img/feria_libro.jpg"
+                  alt="Imagen sobre el evento de Feria del Libro"
+                  class="card-img"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Feria del Libro de Sevilla</h3>
+                <p class="card-description">Texto descriptivo</p>
+                <span class="card-badge">Literatura</span>
+              </div>
+            </div>
+          </a>
+          <a href="evento.html" class="event-link">
+            <div class="card">
+              <div class="div-card-image">
+                <img
+                  src="./img/carmen.webp"
+                  alt="Cartel promocional de Naturaleza Encendida: Carmen"
+                  class="card-img"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Naturaleza Encendida: Carmen</h3>
                 <p class="card-description">Texto descriptivo</p>
                 <span class="card-badge">Nuevo</span>
               </div>
             </div>
           </a>
-          <a href="#" class="event-link">
+          <a href="evento.html" class="event-link">
             <div class="card">
               <div class="div-card-image">
                 <img
-                  src="./img/Petunias-riviera-2027-cartel.webp"
-                  alt=""
+                  src="./img/teatro_flamenco.jpg"
+                  alt="Imagen del próximo evento Grandes Elencos en Triana"
                   class="card-img"
                 />
               </div>
               <div class="card-content">
-                <h3 class="card-title">Titulo</h3>
-                <p class="card-description">Texto descriptivo</p>
-                <span class="card-badge">Nuevo</span>
+                <h3 class="card-title">Grandes Elencos en Triana</h3>
+                <p class="card-description">
+                  El Teatro Flamenco Triana ofrece este viernes a las 18:00 un
+                  formato de gala con artistas galardonados en festivales.
+                </p>
+                <span class="card-badge">Música</span>
               </div>
             </div>
           </a>
-          <a href="#" class="event-link">
+          <a href="evento.html" class="event-link">
             <div class="card">
               <div class="div-card-image">
                 <img
-                  src="./img/Petunias-riviera-2027-cartel.webp"
-                  alt=""
+                  src="./img/amor-liquido.png"
+                  alt="Imagen del concierto de Amor Líquido"
                   class="card-img"
                 />
               </div>
               <div class="card-content">
-                <h3 class="card-title">Titulo</h3>
+                <h3 class="card-title">Amor Líquido</h3>
                 <p class="card-description">Texto descriptivo</p>
-                <span class="card-badge">Nuevo</span>
-              </div>
-            </div>
-          </a>
-          <a href="#" class="event-link">
-            <div class="card">
-              <div class="div-card-image">
-                <img
-                  src="./img/Petunias-riviera-2027-cartel.webp"
-                  alt=""
-                  class="card-img"
-                />
-              </div>
-              <div class="card-content">
-                <h3 class="card-title">Titulo</h3>
-                <p class="card-description">Texto descriptivo</p>
-                <span class="card-badge">Nuevo</span>
-              </div>
-            </div>
-          </a>
-          <a href="#" class="event-link">
-            <div class="card">
-              <div class="div-card-image">
-                <img
-                  src="./img/Petunias-riviera-2027-cartel.webp"
-                  alt=""
-                  class="card-img"
-                />
-              </div>
-              <div class="card-content">
-                <h3 class="card-title">Titulo</h3>
-                <p class="card-description">Texto descriptivo</p>
-                <span class="card-badge">Nuevo</span>
-              </div>
-            </div>
-          </a>
-          <a href="#" class="event-link">
-            <div class="card">
-              <div class="div-card-image">
-                <img
-                  src="./img/Petunias-riviera-2027-cartel.webp"
-                  alt=""
-                  class="card-img"
-                />
-              </div>
-              <div class="card-content">
-                <h3 class="card-title">Titulo</h3>
-                <p class="card-description">Texto descriptivo</p>
-                <span class="card-badge">Nuevo</span>
-              </div>
-            </div>
-          </a>
-          <a href="#" class="event-link">
-            <div class="card">
-              <div class="div-card-image">
-                <img
-                  src="./img/Petunias-riviera-2027-cartel.webp"
-                  alt=""
-                  class="card-img"
-                />
-              </div>
-              <div class="card-content">
-                <h3 class="card-title">Titulo</h3>
-                <p class="card-description">Texto descriptivo</p>
-                <span class="card-badge">Nuevo</span>
+                <span class="card-badge">Música</span>
               </div>
             </div>
           </a>
@@ -172,6 +177,7 @@
       </section>
     </main>
 
+    <!--Footer de la página divido por columnas Quienes Somos, Mapa de navegacion, Preguntas Frecuentes y Redes Sociales-->
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-column">

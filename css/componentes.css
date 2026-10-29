@@ -1,6 +1,10 @@
 .header {
   padding: 1rem 2rem;
 
+  .icon {
+    height: 5rem;
+    max-height: 5rem;
+  }
   .header-container {
     max-width: 100%;
     margin: 0 auto;
@@ -8,6 +12,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .title-container {
+    display: flex;
+    align-items: center;
+  }
+  .title-web {
+    margin-left: 2rem;
   }
 
   .main-nav {
@@ -52,7 +63,7 @@ main {
 }
 
 .events-section {
-  .section-title {
+  .section-next-events {
     border-bottom: 2px solid var(--primary-color);
     display: inline-block;
     margin-bottom: 1.25rem;
