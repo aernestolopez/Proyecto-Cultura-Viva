@@ -9,6 +9,10 @@
   justify-content: space-between;
   align-items: center;
 }
+main {
+  width: 90%;
+  height: auto;
+}
 
 .main-nav ul {
   display: flex;
@@ -33,6 +37,121 @@
 .main-nav a:focus {
   color: var(--primary-color);
   outline: none;
+}
+
+.hero-info {
+  background-color: var(--secondary-background);
+  border-radius: 8px;
+  padding: 1.75rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero-info h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.events-section .section-title {
+  border-bottom: 2px solid var(--primary-color);
+  display: inline-block;
+  margin-bottom: 1.25rem;
+}
+
+.event-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  transform: scale(1);
+  transition:
+    transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+    box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  background-color: var(--light-text-card-bg);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  padding: 1.5rem;
+  flex-grow: 1;
+}
+
+.card-title {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.card-description {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.card-badge {
+  margin-top: 0;
+  align-self: flex-start;
+  background-color: var(--secondary-background);
+  padding: 0.3rem 0.6rem;
+  border-radius: 10px;
+  color: var(--primary-color);
+}
+.event-link:hover .card {
+  transform: scale(1.04);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.div-card-image {
+  width: 100%;
+  height: 12.5rem;
+  max-height: 15rem;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.event-link:hover .card-img {
+  transform: scale(1.05);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: stretch;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.div-card-image {
+  width: 100%;
+  height: 40%;
+  overflow: hidden;
+}
+
+.div-card-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  margin: auto;
 }
 
 .footer {
@@ -65,9 +184,7 @@
   font-size: 0.9rem;
 }
 
-.footer-column h4,
-a,
-small {
+.footer-column * {
   color: var(--light-text-card-bg);
 }
 
