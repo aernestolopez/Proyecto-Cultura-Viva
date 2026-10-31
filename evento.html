@@ -13,23 +13,24 @@
     />
   </head>
   <body>
+    <!--Header que contiene el titulo de la página web y la barra de navegacion-->
     <header class="header">
       <div class="header-container">
-        <!-- <div class="logo-container">
-          <img src="img/logo.png" alt="Logo Cultura Viva" class="logo-img" />
-          
-        </div>-->
         <div class="title-container">
-          <h1 class="logo">Cultura Viva</h1>
+          <img src="./img/icono.png" alt="" class="icon" />
+          <h1 class="title-web">Cultura Viva</h1>
         </div>
+
+        <!--NavBar enlazado a los dos html de la página-->
         <nav class="main-nav">
           <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="evento.html" class="active">Catálogo</a></li>
+            <li><a href="index.html" class="active-nav">Inicio</a></li>
+            <li><a href="evento.html">Catálogo</a></li>
           </ul>
         </nav>
       </div>
     </header>
+    <!--Footer de la página divido por columnas Quienes Somos, Mapa de navegacion, Preguntas Frecuentes y Redes Sociales-->
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-column">
@@ -68,7 +69,15 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <small>Footer</small>
+        <p>
+          <small>
+            &copy; 2026 Cultura Viva. Todos los derechos reservados.
+          </small>
+        </p>
+        <div class="footer-bottom-legal">
+          <a href="#"><small>Política de Cookies</small></a>
+          <a href="#"><small>Términos de Uso</small></a>
+        </div>
       </div>
     </footer>
   </body>

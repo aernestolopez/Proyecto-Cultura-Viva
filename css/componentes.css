@@ -36,8 +36,11 @@
         color: var(--primary-color);
         outline: none;
       }
-      &.active {
+      &.active-nav {
         color: var(--primary-color);
+      }
+      &:active{
+        color: var(--secondary-color);
       }
     }
   }
@@ -61,7 +64,7 @@ main {
     color: var(--primary-color);
   }
   p {
-    color: var(--secondary-color);
+    color: var(--text-color);
     font-weight: 600;
   }
 }
@@ -132,6 +135,9 @@ main {
   .card-description {
     margin-top: auto;
     margin-bottom: auto;
+  }
+  p{
+    color: var(--text-color)
   }
 
   .card-badge {
