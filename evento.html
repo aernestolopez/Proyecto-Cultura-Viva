@@ -15,19 +15,83 @@
     <header class="header">
       <div class="header-container">
         <div class="title-container">
-          <img src="./img/icono.png" alt="" class="icon" />
+          <div class="contenido-icono"></div>
+          <img src="./img/icono.png" alt="" class="icono" />
           <h1 class="title-web">Cultura Viva</h1>
         </div>
 
         <!--NavBar enlazado a los dos html de la página-->
         <nav class="main-nav">
           <ul>
-            <li><a href="index.html" class="active-nav">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="evento.html">Catálogo</a></li>
           </ul>
         </nav>
       </div>
     </header>
+    <!--Columna izquierda, contendrá la foto del evento seleccionado por el usuario y la descripción de dicho evento-->
+    <main class="main-content">
+      <section class="events-section">
+        <h2 class="section-title">Ficha Evento</h2>
+        <div class="evento-grid-layout">
+          <div class="col-evento-izq">
+            <img src="img/petunias.jpg" alt="" class="evento-img" />
+            <section class="evento-descripcion">
+              <h3>Descripción Evento</h3>
+              <p>Texto de descripción</p>
+            </section>
+          </div>
+
+          <div class="col-evento-der">
+            <section class="card-info-evento">
+              <h3>Información del Evento</h3>
+              <ul class="lista-informacion">
+                <li><span>Fecha</span> <span>18/12/2026</span></li>
+                <li><span>Hora</span> <span>20:00</span></li>
+                <li><span>Lugar</span> <span>Cartuja Center</span></li>
+                <li><span>Precio</span> <span>22.00€</span></li>
+              </ul>
+              <button id="boton-reserva" class="bton-primary">Reservar</button>
+            </section>
+
+            <section id="formulario-res" class="form-reserva-evento" hidden>
+              <h3>Formulario</h3>
+              <form class="formulario-reserva">
+                <div class="contenido-formulario">
+                  <label>Número Entradas</label>
+                  <input type="number" id="numero-entradas" min="1" value="1" />
+                </div>
+
+                <div class="contenido-formulario">
+                  <label>Tipo de Entrada</label>
+                  <select id="">
+                    <option value="general">General</option>
+                    <option value="reducida">Reducida</option>
+                  </select>
+                </div>
+
+                <div class="contenido-formulario">
+                  <label>Correo electrónico</label>
+                  <input
+                    type="email"
+                    id="email-envio"
+                    placeholder="correo@gmail.com"
+                  />
+                </div>
+
+                <button type="submit" class="bton-primary">Comprar</button>
+              </form>
+            </section>
+
+            <section class="evento-organizador-card">
+              <h3>Organizado Por</h3>
+              <p>Ayuntamiento de Sevilla</p>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <!--Footer de la página divido por columnas Quienes Somos, Mapa de navegacion, Preguntas Frecuentes y Redes Sociales-->
     <footer class="footer">
       <div class="footer-container">
