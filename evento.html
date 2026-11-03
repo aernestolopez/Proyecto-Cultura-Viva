@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cultura Viva</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="./icon/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -15,16 +26,18 @@
     <header class="header">
       <div class="header-container">
         <div class="title-container">
-          <div class="contenido-icono"></div>
-          <img src="./img/icono.png" alt="" class="icono" />
+          <div class="contenedor-icono">
+            <a href="index.html">
+              <img src="./img/icono.png" alt="" class="icono" />
+            </a>
+          </div>
           <h1 class="title-web">Cultura Viva</h1>
         </div>
 
-        <!--NavBar enlazado a los dos html de la página-->
         <nav class="main-nav">
           <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="evento.html">Catálogo</a></li>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./evento.html" class="active-nav">Catálogo</a></li>
           </ul>
         </nav>
       </div>
@@ -51,9 +64,12 @@
                 <li><span>Lugar</span> <span>Cartuja Center</span></li>
                 <li><span>Precio</span> <span>22.00€</span></li>
               </ul>
-              <button id="boton-reserva" class="bton-primary">Reservar</button>
+              <!--<button id="boton-reserva" class="bton-primary">Reservar</button>-->
             </section>
-
+            <input type="checkbox" id="boton-reserva" class="bton-primary" />
+            <label for="boton-reserva" class="bton-primary label-boton-reserva"
+              >Reservar</label
+            >
             <section id="formulario-res" class="form-reserva-evento" hidden>
               <h3>Formulario</h3>
               <form class="formulario-reserva">

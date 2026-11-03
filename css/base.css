@@ -27,9 +27,13 @@ h6,
   font-family: "Outfit", sans-serif;
   font-weight: 700;
 }
-
-body {
+body,
+button,
+input,
+select {
   font-family: "Plus Jakarta Sans", sans-serif;
+}
+body {
   color: var(--text-color);
   background-color: var(--background);
   line-height: 1.6;
