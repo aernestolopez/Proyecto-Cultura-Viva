@@ -34,6 +34,7 @@ select {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 body {
+  letter-spacing: 0.3px;
   color: var(--text-color);
   background-color: var(--background);
   line-height: 1.6;
