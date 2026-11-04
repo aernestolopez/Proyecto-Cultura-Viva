@@ -5,21 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cultura Viva</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="icon" type="image/x-icon" href="./icon/favicon.ico" />
+    <!--Favicon de la página web-->
+    <link rel="icon" href="./icon/favicon.ico" type="image/x-icon"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!--Fuentes tipográficas provenientes de google fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
+
+      <!--cdn para los iconos de redes sociales-->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   </head>
   <body>
     <!--Header que contiene el titulo de la página web y la barra de navegacion-->
@@ -28,7 +26,7 @@
         <div class="title-container">
           <div class="contenedor-icono">
             <a href="index.html">
-              <img src="./img/icono.png" alt="" class="icono" />
+              <img src="./img/icono.png" alt="icono pagina web" class="icono" />
             </a>
           </div>
           <h1 class="title-web">Cultura Viva</h1>
@@ -37,18 +35,20 @@
         <nav class="main-nav">
           <ul>
             <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./evento.html" class="active-nav">Catálogo</a></li>
+            <li><a href="#">Catálogo</a></li>
+            <li><a href="./evento.html" class="active-nav">Ficha Evento</a></li>
           </ul>
         </nav>
       </div>
     </header>
+
     <!--Columna izquierda, contendrá la foto del evento seleccionado por el usuario y la descripción de dicho evento-->
     <main class="main-content">
       <section class="events-section">
         <h2 class="section-title">Ficha Evento</h2>
         <div class="evento-grid-layout">
           <div class="col-evento-izq">
-            <img src="./img/petunias.jpg" alt="" class="evento-img" />
+            <img src="./img/petunias.jpg" alt="imagen evento" class="evento-img" />
             <section class="evento-descripcion">
               <h3>Concierto Las Petunias</h3>
               <p>
@@ -68,14 +68,12 @@
                 En directo son un auténtico torbellino. Sus actuaciones,
                 cargadas de carisma y una actitud sin complejos, no dejan
                 indiferente a nadie.
-                <b
-                  >¡Ven a vivir la experiencia en directo y hazte con tus
-                  entradas antes de que se agoten!</b
-                >
+                <b>¡Ven a vivir la experiencia en directo y hazte con tus
+                  entradas antes de que se agoten!</b>
               </p>
             </section>
           </div>
-
+          <!--Columna derecha, contiene datos sobre la realización del evento como fecha hora lugar y el formulario de reserva-->
           <div class="col-evento-der">
             <section class="card-info-evento">
               <h3>Información del Evento</h3>
@@ -86,10 +84,9 @@
                 <li><span>Precio</span> <span>22.00€</span></li>
               </ul>
             </section>
-            <input type="checkbox" id="boton-reserva" class="bton-primary" />
-            <label for="boton-reserva" class="bton-primary label-boton-reserva"
-              >Reservar</label
-            >
+            <input type="checkbox"  onchange="window.location.href='#formulario-res'" id="boton-reserva" class="bton-primary" />
+            <label for="boton-reserva" class="bton-primary label-boton-reserva">Reservar</label>
+            <!--Formulario de reserva-->
             <section id="formulario-res" class="form-reserva-evento" hidden>
               <h3>Formulario</h3>
               <form class="formulario-reserva">
@@ -143,7 +140,7 @@
           <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="#">Catálago</a></li>
-            <li><a href="#">Ficha de Evento</a></li>
+            <li><a href="evento.html">Ficha de Evento</a></li>
             <li><a href="#">Formulario de Reserva</a></li>
           </ul>
         </div>
