@@ -1,3 +1,6 @@
+/*Estilos para componentes específicos*/
+
+/*Estilos para el header de la página web*/
 .header {
   padding: 1rem 2rem;
 
@@ -31,6 +34,7 @@
     margin-left: 2rem;
   }
 
+  /*Estilos y pseudoclases de la navegacion*/
   .main-nav {
     ul {
       display: flex;
@@ -116,6 +120,7 @@ main {
   }
 }
 
+/*Estilos para las tarjetas de la web*/
 .card {
   display: flex;
   flex-direction: column;
@@ -176,6 +181,7 @@ main {
   }
 }
 
+/*Estilos para el footer*/
 .footer {
   background-color: var(--secondary-color);
   padding: 2rem 2rem 1rem;
@@ -248,6 +254,7 @@ main {
   }
 }
 
+/*Estilos de la pagina ficha evento*/
 .evento-grid-layout {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
@@ -366,7 +373,7 @@ select {
     opacity: 70%;
   }
 }
-
+/*Logica para hacer aparecer el formulario si se clica el boton de reserva*/
 #boton-reserva:checked ~ #formulario-res {
   display: flex;
   flex-direction: column;
