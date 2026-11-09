@@ -378,3 +378,45 @@ select {
   display: flex;
   flex-direction: column;
 }
+
+.footer-credits {
+  margin: 2rem auto 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+
+  h4 {
+    color: var(--light-text-card-bg);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .credits-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.6rem 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1100px;
+    text-align: left;
+
+    li {
+      color: var(--light-text-card-bg);
+      font-size: 0.85rem;
+      line-height: 1.4;
+      opacity: 0.9;
+    }
+
+    a {
+      color: var(--light-text-card-bg);
+      text-decoration: underline;
+      transition: opacity 0.3s ease;
+
+      &:hover,
+      &:focus {
+        opacity: 0.7;
+      }
+    }
+  }
+}
